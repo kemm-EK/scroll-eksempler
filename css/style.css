@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloock&display=swap");
+
+.hero {
+  grid-column: 2 / -2;
+}
+.two-by {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+h1 {
+  font-family: "Gloock";
+  font-size: 4rem;
+  line-height: 1.1;
+}
+
+p {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+blockquote {
+  font-size: 140%;
+  font-family: "Gloock";
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  margin: unset;
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: 1fr 5% minmax(0, 70ch) 5% 1fr;
+
+  align-items: start;
+  > * {
+    grid-column: 3;
+  }
+}

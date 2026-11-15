@@ -1,0 +1,15 @@
+@keyframes scale {
+  to {
+    scale: 0.5;
+    opacity: 0;
+  }
+}
+h1 {
+  position: sticky;
+  animation: scale ease both;
+  transform-origin: 0 25%;
+  animation-timeline: scroll();
+  animation-range: 0% 25vh;
+  inset-block-start: 1vh;
+  z-index: -1;
+}

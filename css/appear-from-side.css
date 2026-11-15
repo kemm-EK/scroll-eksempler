@@ -1,0 +1,25 @@
+@keyframes appear-1 {
+  from {
+    opacity: 0;
+    translate: -80vw;
+    rotate: -5deg;
+  }
+}
+
+@keyframes appear-2 {
+  from {
+    opacity: 0;
+    translate: 80vw;
+    rotate: 5deg;
+  }
+}
+.two-by img:first-child {
+  animation: appear-1 ease-out both;
+  animation-timeline: view();
+  animation-range: 0% 40%;
+}
+.two-by img:last-child {
+  animation: appear-2 ease-out both;
+  animation-timeline: view();
+  animation-range: 0% 40%;
+}
