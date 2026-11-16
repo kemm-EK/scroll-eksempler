@@ -7,9 +7,10 @@
 h1 {
   position: sticky;
   animation: scale ease both;
-  transform-origin: 0 25%;
+  transform-origin: 0 5%;
   animation-timeline: scroll();
   animation-range: 0% 25vh;
-  inset-block-start: 1vh;
+  top: 5vh;
+  /* inset-block-start: 1vh; */
   z-index: -1;
 }
